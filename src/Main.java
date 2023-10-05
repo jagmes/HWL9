@@ -8,7 +8,7 @@ public class Main {
 
         samsung.receiveCall("баба Люба");
         samsung.info("Galaxy s40\n");
-
+        samsung.receiveCall();
         apple.receiveCall("Яблоковод");
         apple.info("Яблоко 4s");
     }
