@@ -11,6 +11,5 @@ public class Main {
 
         apple.receiveCall("Яблоковод");
         apple.info("Яблоко 4s");
-
     }
 }

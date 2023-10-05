@@ -17,4 +17,8 @@ public class XiaomiPhone  extends Phone{
     }
 
 
+    @Override
+    public void receiveCall() {
+
+    }
 }

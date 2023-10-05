@@ -26,4 +26,9 @@ public class SamsungPhone extends Phone {
     public String receiveCall(String name) {
         return super.receiveCall(name);
     }
+
+    @Override
+    public void receiveCall() {
+
+    }
 }
