@@ -7,13 +7,12 @@ public abstract class Phone implements Callable, Informable {
 
     public abstract void info(String model); // System.out.printf("Model: %s number: %d  weight: %f  \n", model, number, weight);
 
-   public String receiveCall(String name) {
-        System.out.printf("Звонит: %s ", name);
-        return name;
+   public void receiveCall(String name) {
+      //  System.out.printf("Звонит: %s ", name);
     }
    //Геттер
     int getNumber() {
-        System.out.printf("номер: %d ", +number);
+       // System.out.printf("номер: %d ", +number);
         return number;
     }
 
@@ -28,7 +27,13 @@ public abstract class Phone implements Callable, Informable {
         model = name;
     }
 
-    //конструктор с 3мя параметрами.
+
+    public void setModel(){
+       this.model= model;
+    }
+    public String getModel(){
+       return  model;
+    }
 
     public Phone(int number, double weight, String model) {
         this.number = number;
@@ -42,6 +47,5 @@ public abstract class Phone implements Callable, Informable {
         this.weight = weight;
     }
 
-    abstract void info();
 }
 

@@ -11,24 +11,16 @@ public class SamsungPhone extends Phone {
         return model;
     }
 
-    @Override
-    void info() {
-
-    }
 
     @Override
     public void info(String model) {
-        System.out.printf("Модель: %s  ", model);
+        System.out.printf("Samsung Модель: %s  ", getModel());
     }
 
 
     @Override
-    public String receiveCall(String name) {
-        return super.receiveCall(name);
+    public void receiveCall(String name) {
+        System.out.printf("Звонит: %s \n", name);
     }
 
-    @Override
-    public void receiveCall() {
-
-    }
 }
