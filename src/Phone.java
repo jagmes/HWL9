@@ -1,4 +1,4 @@
-public abstract class Phone implements Callable, Informable {
+public abstract class Phone implements Callable, Informable,Cloneable {
     private int number;
     private double weight;
     private String model;
@@ -45,6 +45,20 @@ public abstract class Phone implements Callable, Informable {
     public Phone(int number, double weight) {
         this.number = number;
         this.weight = weight;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "number=" + number +
+                ", model='" + model + '\'' +
+                '}';
+    }
+        // клонирование.
+    @Override
+    public Phone clone() throws CloneNotSupportedException{
+       return (Phone) super.clone();
     }
 
 }
