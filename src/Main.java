@@ -14,6 +14,7 @@ public class Main {
             }
             for (Phone p: phones) {
                 p.info(p.getModel());   //Выводим клонированные телефоны...
+                System.out.println("\nClone...");
             }
 
 
